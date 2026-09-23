@@ -9,7 +9,6 @@ programa{
         escreva("Olá Jovem! Vamos tabular?\n")
         escreva("Qual tabuada deseja ver?")
         leia(numTab)
-
         enquanto(contador <= 10){
             termo = termo + numTab
             contador = contador + 1
