@@ -27,9 +27,8 @@ programa{
             resultado = valorRec * valorDolar
             escreva("Você possui R$:", resultado)
         }
-
         senao {
-            escreva("\n Opção inválida")
+            escreva("\n Opção inválida \n")
         }
     }
 }
