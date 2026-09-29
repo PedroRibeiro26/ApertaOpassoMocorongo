@@ -1,7 +1,6 @@
 programa{
-    funcao areaRetangulo(real base, real altura){
-        real tamanhoArea = base * altura
-        retorne tamanhoArea
+    funcao real areaRetangulo(real base, real altura){
+        retorne base * altura
     }
 
     funcao inicio(){
