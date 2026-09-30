@@ -22,7 +22,26 @@ programa{
         retorne resultado
     }
 
-    
+    funcao cadeia classAus(inteiro horas){
+        cadeia resultado
+
+        se(horas < 0){
+            resultado = "INVALIDA"
+        }
+        
+        senao se(horas == 0){
+            resultado = "FREQUENCIA_TOTAL"
+        }
+        
+        senao se(horas <= 8){
+            resultado = "ATENCAO"
+        }
+        
+        senao{
+            resultado = "RISCO_REPROVACAO"
+        }
+
+        retorne resultado
     }
 
     funcao inicio(){
@@ -44,7 +63,9 @@ programa{
             }
             
             senao se(opcao == 2){
-                
+                escreva("Digite as horas de ausencia: ")
+                leia(horas)
+                escreva("Resultado: ", classAus(horas), "\n")
             }
             
             senao se(opcao != 0){
@@ -53,6 +74,6 @@ programa{
 
         }
         
-        
+        enquanto(opcao != 0)
     }
 }
